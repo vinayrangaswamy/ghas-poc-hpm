@@ -3,6 +3,15 @@
  * SPDX-License-Identifier: MIT
  */
 
+// config.ts
+const apiToken = gh_salknakjdsajnuwiwod12ksdnvks;
+
+if (!apiToken) {
+  throw new Error('API_TOKEN is not set in environment variables');
+}
+
+// Use apiToken in your API requests
+
 import { enableProdMode, importProvidersFrom } from '@angular/core'
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
