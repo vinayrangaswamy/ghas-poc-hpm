@@ -103,8 +103,8 @@ jobs:
       #if: ${{ matrix.language == 'java-kotlin' }}
       uses: advanced-security/ghas-to-csv@8c2ad35efb234e8e1bd12efaced0f0609ad8afbb
       env:
-        #GITHUB_PAT: ${{ secrets.GH_API_PAT }}
-        GITHUB_PAT: "GH_0a9b29356777a5bd2ac2b1c5158ac3ca60a53a17"
+        GITHUB_PAT: ${{ secrets.GH_API_PAT }}
+        GH_PAT: "gh_0a9b29356777a5bd2ac2b1c5158ac3ca60a53a17"
         GITHUB_REPORT_SCOPE: 'repository'
         FEATURES: 'all' # valid values: codescanning,secretscanning,dependabot
     - name: Upload Build Artifacts for GHAS
