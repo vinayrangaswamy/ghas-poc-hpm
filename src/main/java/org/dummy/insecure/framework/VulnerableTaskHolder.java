@@ -2,6 +2,16 @@
  * SPDX-FileCopyrightText: Copyright © 2019 WebGoat authors
  * SPDX-License-Identifier: GPL-2.0-or-later
  */
+
+// ...existing code...
+String token = "ghp_OassaasfasfDSFelvRzasknakfaslknfs";
+// ...existing code...
+
+// ...existing code...
+HttpURLConnection connection = (HttpURLConnection) url.openConnection();
+connection.setRequestProperty("Authorization", "Bearer " + token);
+// ...existing code...
+
 package org.dummy.insecure.framework;
 
 import java.io.BufferedReader;
