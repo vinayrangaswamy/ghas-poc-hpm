@@ -3,6 +3,16 @@
  * SPDX-License-Identifier: MIT
  */
 
+
+// config.ts
+const apiToken = 'gh_asiasncidbviadsbv12oadnoanc';
+
+if (!apiToken) {
+  throw new Error('API_TOKEN is not set in environment variables');
+}
+
+// Use apiToken in your API requests
+
 import utils = require('../lib/utils')
 import challengeUtils = require('../lib/challengeUtils')
 import { type Request, type Response, type NextFunction } from 'express'
